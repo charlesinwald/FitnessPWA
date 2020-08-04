@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme: Theme) =>
         title: {
             fontWeight: 900,
             fontSize: '2rem',
-            marginBottom: '3rem',
+            marginBottom: '5.5rem',
             lineHeight: '48px'
         }
     }),
@@ -39,9 +39,7 @@ const useStyles = makeStyles((theme: Theme) =>
 
 export function Home() {
     const classes = useStyles();
-    console.log(workouts);
-    return <>
-        {/*<Grid container justify="center" className={classes.Grid}>*/}
+    return (
             <div className={classes.root}>
                 <GridList cellHeight={160} className={classes.gridList} cols={3}>
                     {workouts.map((tile: { img: string; cols: number; title: string | undefined; }) => (
@@ -55,6 +53,5 @@ export function Home() {
                     ))}
                 </GridList>
             </div>
-        {/*</Grid>*/}
-    </>;
+    );
 }

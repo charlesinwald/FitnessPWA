@@ -22,12 +22,9 @@ class App extends React.Component {
     }
 
     toggleDarkMode = () => {
-        console.log(this.state);
         // @ts-ignore
         this.setState({isThemeLight : !this.state.isThemeLight});
         this.forceUpdate();
-
-        console.log(this.state);
     };
 
 

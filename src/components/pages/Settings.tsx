@@ -1,35 +1,50 @@
 import React from "react";
-import {FormControlLabel, Grid, Switch, Typography} from "@material-ui/core";
+import {CssBaseline, FormControlLabel, Grid, Switch, Typography} from "@material-ui/core";
+import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 
 interface SettingsProps {
-    toggleDark: (event: React.ChangeEvent<MouseEvent>) => void,
+    toggleDark: any,
     isLight: boolean
 }
 
+// @ts-ignore
+const useStyles = makeStyles((theme: Theme) =>
+    createStyles({
+        root: {
+            backgroundColor: theme.palette.background.paper,
+            height: '90vh',
+        },
+        heading: {
+            color: theme.palette.text.primary,
+        }
+    }));
+
 export function Settings(props: SettingsProps) {
     const [state, setState] = React.useState({
-        light: props.isLight,
+        light: !props.isLight,
     });
 
     function toggleDark() {
-
-        return props.toggleDark;
+        setState((prevState => ({light: !prevState.light})));
+        props.toggleDark();
     }
 
+    const classes = useStyles();
+
     return <>
-        <Grid container justify="center">
-            <Grid item xs={12} justify="center">
-                <Typography variant="h2">Settings</Typography>
+        <Grid container justify="center" className={classes.root}>
+            <CssBaseline />
+            <Grid item xs={12}>
+                <Typography variant="h2" align="center">Settings</Typography>
             </Grid>
-            <Grid item xs={12} justify="flex-start">
+            <Grid item xs={12}>
                 <FormControlLabel control={
                     <Switch
                         checked={state.light}
-                        //@ts-ignore
-                        onChange={toggleDark()}/>}
-                        label="Toggle Dark Mode"/>
+                        color="primary"
+                        onChange={() => toggleDark()}/>}
+                                  label="Toggle Dark Mode"/>
             </Grid>
         </Grid>
-        {/*<BottomBar/>*/}
     </>;
 }

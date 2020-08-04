@@ -8,5 +8,8 @@ export default {
         secondary: {
             main: '#000',
         },
+        text: {
+            main: '#FFF'
+        }
     },
 };

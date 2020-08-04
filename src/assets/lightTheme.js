@@ -6,7 +6,7 @@ export default {
             main: '#000000',
         },
         secondary: {
-            main: '#37b44e',
+            main: '#FFF',
         },
     },
 };

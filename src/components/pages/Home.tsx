@@ -22,7 +22,6 @@ const useStyles = makeStyles((theme: Theme) =>
         gridList: {
             "width": "100vw",
             marginBottom: '10vh'
-
         },
         tileBar: {
             background: "transparent",
@@ -30,7 +29,7 @@ const useStyles = makeStyles((theme: Theme) =>
         title: {
             fontWeight: 900,
             fontSize: '3rem',
-            marginTop: '2rem',
+            marginTop: '3rem',
             lineHeight: '48px',
             overflow: "visible",
         },

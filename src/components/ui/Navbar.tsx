@@ -16,6 +16,7 @@ const useStyles = makeStyles((theme: Theme) =>
             height: '10vh',
             position: 'fixed',
             bottom: 0,
+            zIndex: 9999
         }
     }),
 );

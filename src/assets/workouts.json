@@ -3,24 +3,28 @@
     "id": 1,
     "img": "https://media.giphy.com/media/xT0xenc4lKQlhf1Ohi/giphy.gif",
     "title": "Legs",
-    "cols": 3
+    "cols": 3,
+    "exercises": ["a","b","c"]
   },
   {
     "id": 2,
     "img": "https://media.giphy.com/media/WsFX0H7qz5M1o8VpxH/giphy.gif",
     "title": "Back/Biceps",
-    "cols": 3
+    "cols": 3,
+    "exercises": ["a","b","c"]
   },
   {
     "id": 3,
     "img": "https://media.giphy.com/media/kD5Qm68xxDewGaJDgY/giphy.gif",
     "title": "Shoulders",
-    "cols": 3
+    "cols": 3,
+    "exercises": ["a","b","c"]
   },
   {
     "id": 4,
     "img": "https://media.giphy.com/media/3oEjHQzhb4758m4p2w/giphy.gif",
     "title": "Chest/Triceps",
-    "cols": 3
+    "cols": 3,
+    "exercises": ["a","b","c"]
   }
 ]

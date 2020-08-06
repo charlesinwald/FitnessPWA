@@ -1,30 +1,34 @@
 [
   {
     "id": 1,
-    "img": "https://media.giphy.com/media/xT0xenc4lKQlhf1Ohi/giphy.gif",
-    "title": "Legs",
+    "img": "https://media.giphy.com/media/3oEjHQzhb4758m4p2w/giphy.gif",
+    "title": "Chest/Triceps",
     "cols": 3,
-    "exercises": ["a","b","c"]
+    "exercises": ["Bench press (4 sets)","Inclined Bench Press (3 sets)","Inclined Dumbbell Fly (3 sets)",
+      "Cable Crossover (3sets)", "Tricep Dips (4 sets)", "Tricep Pushdown (3 sets)", "Overhead Triceps Extension (3 sets)"]
   },
   {
     "id": 2,
     "img": "https://media.giphy.com/media/WsFX0H7qz5M1o8VpxH/giphy.gif",
     "title": "Back/Biceps",
     "cols": 3,
-    "exercises": ["a","b","c"]
+    "exercises": ["One-arm Dumbbell Row (4 sets)",
+      "Lat Pulldown (3 sets)","Seated Cable Row (3 sets)",
+    "V-bar Pulldown (3 sets)", "Barbell Curl (4 sets)", "Inclined Dumbbell Hammer Curl (3 sets)", "Cable Hammer Curl (3 sets)"]
   },
   {
     "id": 3,
+    "img": "https://media.giphy.com/media/xT0xenc4lKQlhf1Ohi/giphy.gif",
+    "title": "Legs",
+    "cols": 3,
+    "exercises": ["Squat (4 sets)","Leg Press (3 sets)","Leg Extensions (3 sets)","Deadlift (4 sets)", "Lying Leg Curls (3 sets)"]
+  },
+
+  {
+    "id": 4,
     "img": "https://media.giphy.com/media/kD5Qm68xxDewGaJDgY/giphy.gif",
     "title": "Shoulders",
     "cols": 3,
-    "exercises": ["a","b","c"]
-  },
-  {
-    "id": 4,
-    "img": "https://media.giphy.com/media/3oEjHQzhb4758m4p2w/giphy.gif",
-    "title": "Chest/Triceps",
-    "cols": 3,
-    "exercises": ["a","b","c"]
+    "exercises": ["Dumbbell shoulder press (4 sets)","Front Cable Raise (3 sets)","Standing Lateral Raise (3 sets)", "Back Fly (3 sets)", "Dumbbell Shrug (4 sets)", "Seated/Standing Calf Raise (4 sets)"]
   }
 ]

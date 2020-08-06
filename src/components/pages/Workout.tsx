@@ -1,5 +1,5 @@
 import React from "react";
-import {Grid, List, ListSubheader, Paper, ListItem, ListItemText, Checkbox} from "@material-ui/core";
+import {Grid, List, Paper, ListItem, ListItemText, Checkbox} from "@material-ui/core";
 import {useHistory} from "react-router-dom";
 import {BackButton} from "../ui/BackButton";
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
@@ -54,12 +54,10 @@ export function Workout() {
                     {exercises.map((exercise) => (
                         <li key={exercise} className={classes.listSection}>
                             <ul className={classes.ul}>
-                                {[0, 1, 2].map((item) => (
                                     <ListItem key={exercise}>
                                         <ListItemText primary={exercise} />
-                                        <Checkbox />
+                                        <Checkbox color='primary'/>
                                     </ListItem>
-                                ))}
                             </ul>
                         </li>
                     ))}

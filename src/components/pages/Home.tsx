@@ -13,7 +13,6 @@ const useStyles = makeStyles((theme: Theme) =>
             overflow: 'hidden',
             backgroundColor: theme.palette.background.paper,
             height: '90vh',
-            // marginBottom: '10vh'
         },
         Grid: {
             // height: '90vh',

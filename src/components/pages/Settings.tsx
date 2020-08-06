@@ -1,5 +1,5 @@
 import React from "react";
-import {CssBaseline, FormControlLabel, Grid, Paper, Switch, Typography} from "@material-ui/core";
+import {CssBaseline, FormControlLabel, Grid, Switch, Typography} from "@material-ui/core";
 import {createStyles, makeStyles, Theme} from "@material-ui/core/styles";
 import {BackButton} from "../ui/BackButton";
 

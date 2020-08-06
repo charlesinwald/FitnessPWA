@@ -31,7 +31,6 @@ class App extends React.Component {
         // @ts-ignore
         const {isThemeLight}: boolean = this.state;
         return (
-            // @ts-ignore
             <MuiThemeProvider theme={isThemeLight ? light : dark}>
             <div className="App">
                 <MemoryRouter>

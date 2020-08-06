@@ -24,7 +24,6 @@ class App extends React.Component {
     toggleDarkMode = () => {
         // @ts-ignore
         this.setState({isThemeLight : !this.state.isThemeLight});
-        this.forceUpdate();
     };
 
 
@@ -37,8 +36,10 @@ class App extends React.Component {
             <div className="App">
                 <MemoryRouter>
                     <Route exact path='/' component={Home}/>
-                    <Route exact path='/workout' component={Workout}/>
-                    <Route exact path='/settings' render={(props) => <Settings {...props} toggleDark={this.toggleDarkMode} isLight={isThemeLight}/>} />
+                    <Route exact path='/workout'
+                           component={Workout}/>
+                    <Route exact path='/settings'
+                           render={(props) => <Settings {...props} toggleDark={this.toggleDarkMode} isLight={isThemeLight}/>} />
                     <BottomBar theme={isThemeLight ? light : dark}/>
                 </MemoryRouter>
             </div>

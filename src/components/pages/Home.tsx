@@ -1,7 +1,8 @@
 import React from "react";
-import {Grid, GridList, GridListTile, GridListTileBar} from "@material-ui/core";
+import {GridList, GridListTile, GridListTileBar} from "@material-ui/core";
 import {createStyles, makeStyles, Theme} from '@material-ui/core/styles';
 import {default as workouts} from '../../assets/workouts.json';
+import {useHistory} from "react-router-dom";
 
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
@@ -20,8 +21,6 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         gridList: {
             "width": "100vw",
-            // "height": '90vh',
-            // "overflowY": 'auto',
             marginBottom: '10vh'
 
         },
@@ -30,24 +29,46 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         title: {
             fontWeight: 900,
-            fontSize: '2rem',
-            marginBottom: '5.5rem',
-            lineHeight: '48px'
+            fontSize: '3rem',
+            marginTop: '2rem',
+            lineHeight: '48px',
+            overflow: "visible",
+        },
+        titleWrap: {
+            overflow: "visible"
+        },
+        imgFullHeight: {
+            height: '100%'
+        },
+        tile: {
+            height: '100%'
         }
     }),
 );
 
 export function Home() {
     const classes = useStyles();
+    const history = useHistory();
+
+    function openWorkout(id: number) {
+        history.push({pathname: '/workout',
+                      state: id
+                                });
+    }
+
     return (
             <div className={classes.root}>
-                <GridList cellHeight={160} className={classes.gridList} cols={3}>
-                    {workouts.map((tile: { img: string; cols: number; title: string | undefined; }) => (
-                        <GridListTile key={tile.img} cols={tile.cols || 1}>
+                <GridList cellHeight={160} className={classes.gridList} cols={3} spacing={1}>
+                    {workouts.map((tile: { img: string; cols: number; title: string | undefined; id: number}) => (
+                        <GridListTile
+                                      cols={tile.cols || 1}
+                                      onClick={() => openWorkout(tile.id)}
+                                      >
                             <img src={tile.img} alt={tile.title}/>
                             <GridListTileBar
+                                titlePosition="top"
                                 title={tile.title}
-                                classes={{root: classes.tileBar, title: classes.title}}
+                                classes={{root: classes.tileBar, title: classes.title, titleWrap: classes.titleWrap}}
                             />
                         </GridListTile>
                     ))}

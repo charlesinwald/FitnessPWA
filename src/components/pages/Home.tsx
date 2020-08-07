@@ -3,7 +3,6 @@ import {GridList, GridListTile, GridListTileBar} from "@material-ui/core";
 import {createStyles, makeStyles, Theme} from '@material-ui/core/styles';
 import {default as workouts} from '../../assets/workouts.json';
 import {useHistory} from "react-router-dom";
-
 const useStyles = makeStyles((theme: Theme) =>
     createStyles({
         root: {
@@ -62,7 +61,11 @@ export function Home() {
                                       cols={tile.cols || 1}
                                       onClick={() => openWorkout(tile.id)}
                                       >
-                            <img src={tile.img} alt={tile.title}/>
+                            <video autoPlay loop muted playsInline>
+                                <source src={'images/' + tile.img} type="video/webm">
+                                </source>
+                            </video>
+                            {/*<img src={'src/assets/images/' + tile.img} alt={tile.title}/>*/}
                             <GridListTileBar
                                 titlePosition="top"
                                 title={tile.title}

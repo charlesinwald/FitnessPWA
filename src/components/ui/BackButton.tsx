@@ -9,7 +9,7 @@ const useStyles = makeStyles((theme: Theme) =>
         fab: {
             position: 'fixed',
             top: theme.spacing(2),
-            left: theme.spacing(2),
+            left: theme.spacing(1),
             backgroundColor: "transparent",
             boxShadow: "none"
         }

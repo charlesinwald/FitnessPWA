@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "img": "https://media.giphy.com/media/3oEjHQzhb4758m4p2w/giphy.gif",
+    "img": "chest.webm",
     "title": "Chest/Triceps",
     "cols": 3,
     "exercises": ["Bench press (4 sets)","Inclined Bench Press (3 sets)","Inclined Dumbbell Fly (3 sets)",
@@ -9,7 +9,7 @@
   },
   {
     "id": 2,
-    "img": "https://media.giphy.com/media/WsFX0H7qz5M1o8VpxH/giphy.gif",
+    "img": "arms.webm",
     "title": "Back/Biceps",
     "cols": 3,
     "exercises": ["One-arm Dumbbell Row (4 sets)",
@@ -18,7 +18,7 @@
   },
   {
     "id": 3,
-    "img": "https://media.giphy.com/media/xT0xenc4lKQlhf1Ohi/giphy.gif",
+    "img": "legs.webm",
     "title": "Legs",
     "cols": 3,
     "exercises": ["Squat (4 sets)","Leg Press (3 sets)","Leg Extensions (3 sets)","Deadlift (4 sets)", "Lying Leg Curls (3 sets)"]
@@ -26,7 +26,7 @@
 
   {
     "id": 4,
-    "img": "https://media.giphy.com/media/kD5Qm68xxDewGaJDgY/giphy.gif",
+    "img": "shoulders.webm",
     "title": "Shoulders",
     "cols": 3,
     "exercises": ["Dumbbell shoulder press (4 sets)","Front Cable Raise (3 sets)","Standing Lateral Raise (3 sets)", "Back Fly (3 sets)", "Dumbbell Shrug (4 sets)", "Seated/Standing Calf Raise (4 sets)"]

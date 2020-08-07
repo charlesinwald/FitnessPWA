@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme: Theme) =>
         },
         Paper: {
             height: '90vh',
-            width: '100vh',
+            width: '100%',
         },
         gridList: {
             "width": "100vw",

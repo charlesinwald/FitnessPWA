@@ -34,9 +34,9 @@ class App extends React.Component {
             <MuiThemeProvider theme={isThemeLight ? light : dark}>
             <div className="App">
                 <MemoryRouter>
-                    <Route exact path='/' component={Home}/>
+                    <Route exact path='/' render={(props) => <Home />}/>
                     <Route exact path='/workout'
-                           component={Workout}/>
+                           render={(props) => <Workout />}/>
                     <Route exact path='/settings'
                            render={(props) => <Settings {...props} toggleDark={this.toggleDarkMode} isLight={isThemeLight}/>} />
                     <BottomBar theme={isThemeLight ? light : dark}/>

@@ -65,7 +65,6 @@ export function Home() {
                                 <source src={'images/' + tile.img} type="video/webm">
                                 </source>
                             </video>
-                            {/*<img src={'src/assets/images/' + tile.img} alt={tile.title}/>*/}
                             <GridListTileBar
                                 titlePosition="top"
                                 title={tile.title}
